@@ -1,7 +1,5 @@
 from os.path import dirname
 
-DIRECTORY = dirname(__file__).removesuffix("src")
-
 HIDDEN_LAYER_SIZE = 16
 RESULT_LAYER_SIZE = 10
 
