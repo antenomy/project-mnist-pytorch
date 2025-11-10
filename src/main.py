@@ -29,7 +29,7 @@ def test_NN(test_x, test_y):
 # Load Data
 print("Loading MNIST data...")
 
-with gzip.open(DIRECTORY + 'data/mnist.pkl.gz', 'rb') as file:
+with gzip.open('data/mnist.pkl.gz', 'rb') as file:
     (train_x, train_y), validation_data, (test_x, test_y) = pickle.load(file, encoding="latin1")
 
 assert train_x[0].shape == test_x[0].shape, "Unmatching train and test data"
